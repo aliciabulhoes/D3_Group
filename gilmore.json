@@ -1,0 +1,70 @@
+{
+	"Lorelai":[
+		{
+			"name":"Luke",
+			"percent":92
+
+		},
+		{
+			"name":"Chrisopher",
+			"percent":4
+		},
+		{
+			"name":"Max",
+			"percent":3
+		},
+		{
+			"name":"Jason",
+			"percent":1
+		}
+	],
+	"Rory":[
+		{
+			"name":"Jess",
+			"percent":53
+
+		},
+		{
+			"name":"Logan",
+			"percent":31
+		},
+		{
+			"name":"Dean",
+			"percent":8
+		},
+		{
+			"name":"Paris",
+			"percent":8
+		}
+	],
+	"Lane":[
+		{
+			"name":"Zack",
+			"percent":59
+
+		},
+		{
+			"name":"Dave",
+			"percent":38
+		},
+		{
+			"name":"Brian",
+			"percent":3
+		}
+	],
+	"Paris":[
+		{
+			"name":"Doyle",
+			"percent":80
+
+		},
+		{
+			"name":"Jamie",
+			"percent":15
+		},
+		{
+			"name":"Rory",
+			"percent":5
+		}
+	]
+}
