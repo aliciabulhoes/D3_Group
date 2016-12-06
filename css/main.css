@@ -20,8 +20,18 @@ body {
  	background-image: radial-gradient(circle farthest-corner,  #B2DCE3 0%, #7AB6C3 100%);
 }
 
+.hidden {
+	display:none;
+}
+
+@font-face {
+  font-family: 'solid_antique';
+  src: url("../fonts/solid_antique.woff") format("woff");
+}
+
+/*----------------------------------HERO------------------------------------------*/
 #hero {
-	background: url(../images/header.png)right no-repeat;
+	background: url(../images/header.png)left no-repeat;
 	height:345px; 
 	width:100%;
 	text-align: center;
@@ -29,11 +39,11 @@ body {
 
 
 #logo{
-	width: 70%;
+	width:71%;
 	margin: 0 auto;
+	/*padding: 96px 45px 40px 45px;*/
 	padding-top: 96px;
-	padding-bottom: 40px;
-
+	padding-bottom: 50px;
 }
 
 #hero button {
@@ -44,4 +54,30 @@ body {
 	color:white;
 	font-size:15px;
 	padding: 10px 25px 10px 25px;
+	letter-spacing: 1px;
 }
+
+#hero h1 {
+	font-family: 'solid_antique';
+	/*font-family: 'Roboto';*/
+	font-size: 19px;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	padding: 0 50px 50px 50px;
+
+	color:white;
+}
+
+/*---------------------------------LINKS-------------------------------------*/
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited{
+	color:none;
+}
+/*---------------------------------MAIN-CONTENT-------------------------------------*/
+
+
