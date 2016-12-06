@@ -1,3 +1,47 @@
 @charset "UTF-8";
 /* CSS Document */
+img, embed, object, video 
+{
+max-width: 100%;
+}
 
+img 
+{ 
+-ms-interpolation-mode: bicubic; 
+}
+
+
+body {
+  	
+ 	font: Helvetica, Arial, sans-serif;
+ 	margin: 0 auto;
+ 	font-size: 100%;
+ 	max-width: 1200px;
+ 	background-image: radial-gradient(circle farthest-corner,  #B2DCE3 0%, #7AB6C3 100%);
+}
+
+#hero {
+	background: url(../images/header.png)right no-repeat;
+	height:345px; 
+	width:100%;
+	text-align: center;
+}
+
+
+#logo{
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 96px;
+	padding-bottom: 40px;
+
+}
+
+#hero button {
+	background-color: #727F82;
+	border: none;
+	border-radius: 8px;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-size:15px;
+	padding: 10px 25px 10px 25px;
+}
