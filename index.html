@@ -11,9 +11,9 @@
 <body>
 <section id="hero">
 <div id="logo">
-	<img src="images/logo.png" alt="Gilmore Girls Logo"></div>
+	<img id="mainLogo" src="images/logo.png" alt="Gilmore Girls Logo"></div>
 
-<h1>In a perfect world, who would your favourite characters end up with?</h1>
+<h1 id="tagLine">In a perfect world, who would your favourite characters end up with?</h1>
 
 <a id= "calltoact" href="https://www.buzzfeed.com/jasminnahar/questions-every-gilmore-girls-fan-should-find-easy-af-to?utm_term=.ar84qjBpw7#.skK7dgorbN">Cast Your Vote</a>
 
@@ -28,6 +28,14 @@
 		<button class="button">Paris</button>
 </section>
 
+<section id="music">
+	<h2 class="hidden">Music Player</h2>
+	<button id="musicControls"></button>
+	<audio id="gilmoremusic">
+		<source  src="audio/gilmoreaudio.mp3" type="audio/mpeg">
+	</audio>
+</section>
+
 <footer>
 	<h2 class="hidden">Footer Navigation</h2>
 	<img id="logoFoot" src="images/logo.png" alt="logo">
@@ -37,8 +45,10 @@
 		<li><a href="https://www.facebook.com/GilmoreGirls/"><img src="images/fay.svg" alt="Facebook!"></a>
 		<li><a href="https://www.instagram.com/gilmoregirls/?hl=en"><img src="images/insta.svg" alt="instagram!"></a>
 	</ul>
-	<p id="copyR">Data taken from Buzzfeed&copy;<br/ >By Melissa Lajoie &amp; Alicia Bulhoes</p>
+	<p id="copyR">Data taken from Buzzfeed&copy;<br/>By Melissa Lajoie &amp; Alicia Bulhoes</p>
 </footer>
-<script src="js/main.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/greensock.js"></script>
+<!-- <script src="js/main.js"></script> -->
 </body>
 </html>

@@ -47,11 +47,11 @@ body {
 }
 
 #calltoact {
-	background-color: #727F82;
+	background-color: #7AB6C3;
 	border-radius: 8px;
 	font-family: 'Roboto', sans-serif;
 	color:white;
-	font-size:15px;
+	font-size:16px;
 	padding: 10px 25px 10px 25px;
 	letter-spacing: 1px;
 }
@@ -85,7 +85,8 @@ a:visited{
 .button {
 	-webkit-appearance: none;
 	outline:0;
-	background-color: #727F82;
+	/*background-color: #727F82;*/
+	background-color: #7AB6C3;
 	border-radius: 5px;
 	border:none;
 	font-family: 'Roboto', sans-serif;
@@ -99,6 +100,18 @@ a:visited{
 	padding: 10px;
 }
 
+#music {
+	display: flex;
+}
+
+#musicControls {
+	background: url(../images/playPause.png) center no-repeat;
+	border:none;
+	width:100px;
+	height: 100px;
+	outline:0;
+	flex:1;
+}
 
 /*---------------------------------FOOTER-CONTENT-------------------------------------*/
 
