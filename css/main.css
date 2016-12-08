@@ -42,7 +42,7 @@ body {
 	width:71%;
 	margin: 0 auto;
 	/*padding: 96px 45px 40px 45px;*/
-	padding-top: 96px;
+	padding-top: 40px;
 	padding-bottom: 50px;
 }
 
@@ -104,24 +104,24 @@ a:visited{
 
 #music {
 	display: flex;
+	flex-direction: row-reverse;
 }
 
 #musicControls {
-	background: url(../images/playPause.png) center no-repeat;
+	background: url(../images/playPause3.png) center no-repeat;
 	border:none;
-	width:100px;
+	width:80px;
 	height: 100px;
 	outline:0;
-	flex:1;
+	margin-right:10px;
+	
+	
 }
 
 #D3 {
 	text-align: center;
 }
 
-#music {
-	margin-bottom: 50px;
-}
 /*---------------------------------FOOTER-CONTENT-------------------------------------*/
 
 footer {
@@ -189,10 +189,11 @@ footer {
   border: 0px;  
   font-size: 25px;
   font-family:'Roboto', sans-serif;
-  color: black;
+  color: #666;
   text-align: center; 
   vertical-align: middle; 
   opacity: 0; 
+ 
 
 }
 

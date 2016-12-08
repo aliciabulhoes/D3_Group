@@ -17,8 +17,9 @@ var button2 = document.querySelector('#roryButton');
 var button3 = document.querySelector('#laneButton');
 var button4 = document.querySelector('#parisButton');
 
-function lorelaiLove(e){
+function lorelaiLove(){
 	document.querySelector('#graph').innerHTML='';
+
 d3.json('gilmore.json', function(data){
 
 var div = d3.select('#graph')
@@ -76,6 +77,7 @@ var bar = svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
+
 		.transition()
 			.duration(800)
 			.delay(function(d, i){
@@ -87,8 +89,6 @@ var bar = svg.selectAll('bar')
 			.attr("y", function (d, i) {
 				return height - y(d.percent);
 			})
-		
-
 		
         .on("mouseover", function(d){
             div.transition()
@@ -110,16 +110,6 @@ var bar = svg.selectAll('bar')
           d3.select(this)
 				.style('fill', "#5F9EA0");
         });
-
-
- /*   bar.selectAll('rect')
-     .transition()
-            .duration(700)
-            .ease("linear")
-            .attr("height", height)
-            .attr("y", function(d){return yAxis(d.percent);})
-            .ease(elastic); 
-*/
 
 	})
 
@@ -256,7 +246,7 @@ svg.selectAll('bar')
 	.append('rect')
 		.attr('class', 'bar')
 		.attr('x', function(d, i){
-			return i * (barWidth + 51.5);
+			return i * (barWidth + 50);
 		})
 		.attr('width', barWidth)
 		.attr('y', function(d){
@@ -265,7 +255,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
-		.attr('transform', 'translate(21)')
+		.attr('transform', 'translate(27)')
 		.attr('class', 'barStyle')
 		
      .on("mouseover", function(d){
@@ -340,7 +330,7 @@ svg.selectAll('bar')
 	.append('rect')
 		.attr('class', 'bar')
 		.attr('x', function(d, i){
-			return i * (barWidth + 51.5);
+			return i * (barWidth + 50);
 		})
 		.attr('width', barWidth)
 		.attr('y', function(d){
@@ -349,7 +339,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
-		.attr('transform', 'translate(21)')
+		.attr('transform', 'translate(27)')
 		.attr('class', 'barStyle')
 		
         .on("mouseover", function(d){
