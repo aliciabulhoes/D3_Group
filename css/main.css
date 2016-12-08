@@ -180,9 +180,10 @@ footer {
 /*---------------------------------D3-STYLE-------------------------------------*/
 
 .textName { 
-  position: absolute;                     
-  width: 60px;                  
-  height: 30px; 
+  position: absolute;
+  margin-top:300px;                     
+  width: 300px;                  
+  height: 60px; 
   border-radius: 35%;    
   padding: 10px;                               
   border: 0px;  

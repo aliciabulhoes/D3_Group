@@ -2,12 +2,14 @@
 	"Lorelai":[
 		{
 			"name":"Luke",
-			"percent":92
+			"percent":92,
+			"image":"luke.jpeg"
 
 		},
 		{
-			"name":"Chrisopher",
-			"percent":4
+			"name":"Christopher",
+			"percent":4,
+			"image":"christopher.jpeg"
 		},
 		{
 			"name":"Max",
