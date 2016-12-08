@@ -47,7 +47,7 @@ var svg = d3.select('#graph')
 svg.append('g')
 	.attr('class', 'x')
 	.attr('transform', 'translate(0,' + height + ')')
-	.call(xAxis)
+		.call(xAxis)
 	.selectAll('text')
 		.style('text-anchor', 'middle')
 		.attr('dx', '2')
@@ -64,6 +64,7 @@ var bar = svg.selectAll('bar')
 	.enter()
 	.append('rect')
 		.attr('class', 'bar')
+		.attr('class', 'barStyle')
 		.attr('x', function(d, i){
 			return i * (barWidth + barOffset);
 		})
@@ -71,11 +72,22 @@ var bar = svg.selectAll('bar')
 		.attr('y', function(d){
 			return height - d.percent * scale;
 		})
+		.attr('transform', 'translate(15)')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
-		.attr('transform', 'translate(15)')
-		.attr('class', 'barStyle')
+		.transition()
+			.duration(800)
+			.delay(function(d, i){
+				return i * 500;
+			})
+			.attr("height", function (d, i) {
+				return y(d.percent);
+			})
+			.attr("y", function (d, i) {
+				return height - y(d.percent);
+			})
+		
 
 		
         .on("mouseover", function(d){
@@ -97,10 +109,17 @@ var bar = svg.selectAll('bar')
 
           d3.select(this)
 				.style('fill', "#5F9EA0");
+        });
 
 
-        }); 
-
+ /*   bar.selectAll('rect')
+     .transition()
+            .duration(700)
+            .ease("linear")
+            .attr("height", height)
+            .attr("y", function(d){return yAxis(d.percent);})
+            .ease(elastic); 
+*/
 
 	})
 
