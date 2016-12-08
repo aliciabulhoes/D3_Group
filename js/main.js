@@ -84,8 +84,10 @@ var bar = svg.selectAll('bar')
 				return d.percent * scale;
 			})
 			.attr(0, "y");
-		
-        svg.selectAll('rect')
+
+
+				
+		svg.selectAll('rect')
         .on("mouseover", function(d){
             div.transition()
             .duration(200)
