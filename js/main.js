@@ -21,6 +21,9 @@ function lorelaiLove(e){
 	document.querySelector('#graph').innerHTML='';
 d3.json('gilmore.json', function(data){
 
+var div = d3.select('#graph')
+			.append("div")
+			.attr("class", "textName");
 
 var x = d3.scaleBand()
 	.domain(data.Lorelai.map(function(d){
@@ -70,6 +73,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
+		.attr('transform', 'translate(15)')
 		.attr('class', 'barStyle')
 		
         .on("mouseover", function(d){
@@ -98,6 +102,9 @@ function roryLove(e){
 	document.querySelector('#graph').innerHTML="";
 d3.json('gilmore.json', function(data){
 
+var div = d3.select('#graph')
+			.append("div")
+			.attr("class", "textName");
 
 var x = d3.scaleBand()
 	.domain(data.Rory.map(function(d){
@@ -147,6 +154,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
+		.attr('transform', 'translate(15)')
 		.attr('class', 'barStyle')
 		
         .on("mouseover", function(d){
@@ -174,6 +182,9 @@ function laneLove(e){
 	document.querySelector('#graph').innerHTML="";
 d3.json('gilmore.json', function(data){
 
+var div = d3.select('#graph')
+			.append("div")
+			.attr("class", "textName");
 
 var x = d3.scaleBand()
 	.domain(data.Lane.map(function(d){
@@ -214,7 +225,7 @@ svg.selectAll('bar')
 	.append('rect')
 		.attr('class', 'bar')
 		.attr('x', function(d, i){
-			return i * (barWidth + barOffset);
+			return i * (barWidth + 51.5);
 		})
 		.attr('width', barWidth)
 		.attr('y', function(d){
@@ -223,6 +234,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
+		.attr('transform', 'translate(21)')
 		.attr('class', 'barStyle')
 		
         .on("mouseover", function(d){
@@ -251,6 +263,9 @@ function parisLove(e){
 	document.querySelector('#graph').innerHTML="";
 d3.json('gilmore.json', function(data){
 
+var div = d3.select('#graph')
+			.append("div")
+			.attr("class", "textName");
 
 var x = d3.scaleBand()
 	.domain(data.Paris.map(function(d){
@@ -291,7 +306,7 @@ svg.selectAll('bar')
 	.append('rect')
 		.attr('class', 'bar')
 		.attr('x', function(d, i){
-			return i * (barWidth + barOffset);
+			return i * (barWidth + 51.5);
 		})
 		.attr('width', barWidth)
 		.attr('y', function(d){
@@ -300,6 +315,7 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
+		.attr('transform', 'translate(21)')
 		.attr('class', 'barStyle')
 		
         .on("mouseover", function(d){
