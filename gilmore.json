@@ -3,70 +3,82 @@
 		{
 			"name":"Luke",
 			"percent":92,
-			"image":"luke.jpeg"
+			"image":"luke.jpg"
 
 		},
 		{
 			"name":"Christopher",
 			"percent":4,
-			"image":"christopher.jpeg"
+			"image":"christopher.jpg"
 		},
 		{
 			"name":"Max",
-			"percent":3
+			"percent":3,
+			"image":"max.jpg"
 		},
 		{
 			"name":"Jason",
-			"percent":1
+			"percent":1,
+			"image":"jason.jpg"
 		}
 	],
 	"Rory":[
 		{
 			"name":"Jess",
-			"percent":53
+			"percent":53,
+			"image":"jess.jpg"
 
 		},
 		{
 			"name":"Logan",
-			"percent":31
+			"percent":31,
+			"image":"logan.jpg"
 		},
 		{
 			"name":"Dean",
-			"percent":8
+			"percent":8,
+			"image":"dean.jpg"
 		},
 		{
 			"name":"Paris",
-			"percent":8
+			"percent":8,
+			"image":"paris.jpg"
 		}
 	],
 	"Lane":[
 		{
-			"name":"Zack",
-			"percent":59
+			"name":"Zach",
+			"percent":59,
+			"image":"zach.jpg"
 
 		},
 		{
 			"name":"Dave",
-			"percent":38
+			"percent":38,
+			"image":"dave.jpg"
 		},
 		{
 			"name":"Brian",
-			"percent":3
+			"percent":3,
+			"image":"brian.jpg"
 		}
 	],
 	"Paris":[
 		{
 			"name":"Doyle",
-			"percent":80
+			"percent":80,
+			"image":"doyel.jpg"
 
 		},
 		{
 			"name":"Jamie",
-			"percent":15
+			"percent":15,
+			"image":"jamie.jpg"
 		},
 		{
 			"name":"Rory",
-			"percent":5
+			"percent":5,
+			"image":"rory.jpg"
 		}
 	]
 }

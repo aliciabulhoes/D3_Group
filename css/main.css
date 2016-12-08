@@ -197,6 +197,19 @@ footer {
 }
 
 .barStyle {
-	fill: cadetblue;
+	fill: #5F9EA0;
 
+}
+
+.domain {
+	stroke:#666;
+}
+
+.tick line{
+	stroke:#666;
+}
+
+
+.tick {
+	stroke:#666;
 }
