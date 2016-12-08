@@ -54,6 +54,11 @@ body {
 	font-size:16px;
 	padding: 10px 25px 10px 25px;
 	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#calltoact:hover{
+	background-color: #FB5A5A;
 }
 
 #hero h1 {
@@ -100,6 +105,11 @@ a:visited{
 	    flex-basis:100%;
 	margin: 5px 10px 5px 10px;
 	padding: 10px;
+	cursor: pointer;
+}
+
+.button:hover{
+	background-color: #FB5A5A;
 }
 
 #music {
