@@ -82,8 +82,8 @@ svg.selectAll('bar')
             .style("opacity", 1)
             div.html(d.percent+"%"+"<img height='100'src=images/"+d.image+"/>") 
             .style("left", (d3.event.pageX - 20) + "px")
-            // .style("top", (d3.event.pageY - 80) + "px");  
-            .style("top", height - d.percent +"px");        
+            //.style("top", (d3.event.pageY - 80) + "px");  
+            .style("top", height+500 - d.percent +"px");        
         
              d3.select(this)
 				.style('opacity', .5)

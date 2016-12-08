@@ -181,7 +181,7 @@ footer {
 
 .textName { 
   position: absolute;
-  margin-top:300px;                     
+  /*margin-top:300px;  */                   
   width: 300px;                  
   height: 60px; 
   border-radius: 35%;    
