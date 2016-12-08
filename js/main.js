@@ -74,22 +74,18 @@ var bar = svg.selectAll('bar')
 			return height - d.percent * scale;
 		})
 		.attr('transform', 'translate(15)')
-		.attr('height', function(d){
-			return d.percent * scale;
-		})
-
+		.attr('height', 0)
 		.transition()
 			.duration(800)
 			.delay(function(d, i){
-				return i * 500;
+				return i * 1000;
 			})
-			.attr("height", function (d, i) {
-				return y(d.percent);
+			.attr("height", function (d) {
+				return d.percent * scale;
 			})
-			.attr("y", function (d, i) {
-				return height - y(d.percent);
-			})
+			.attr(0, "y");
 		
+        svg.selectAll('rect')
         .on("mouseover", function(d){
             div.transition()
             .duration(200)
@@ -173,7 +169,18 @@ svg.selectAll('bar')
 		})
 		.attr('transform', 'translate(15)')
 		.attr('class', 'barStyle')
+		.attr('height', 0)
+		.transition()
+			.duration(800)
+			.delay(function(d, i){
+				return i * 1000;
+			})
+			.attr("height", function (d) {
+				return d.percent * scale;
+			})
+			.attr(0, "y");
 		
+        svg.selectAll('rect')
        .on("mouseover", function(d){
             div.transition()
             .duration(200)
@@ -257,8 +264,19 @@ svg.selectAll('bar')
 		})
 		.attr('transform', 'translate(27)')
 		.attr('class', 'barStyle')
+		.attr('height', 0)
+		.transition()
+			.duration(800)
+			.delay(function(d, i){
+				return i * 1000;
+			})
+			.attr("height", function (d) {
+				return d.percent * scale;
+			})
+			.attr(0, "y");
 		
-     .on("mouseover", function(d){
+        svg.selectAll('rect')
+     	.on("mouseover", function(d){
             div.transition()
             .duration(200)
             .style("opacity", 1)
@@ -341,6 +359,18 @@ svg.selectAll('bar')
 		})
 		.attr('transform', 'translate(27)')
 		.attr('class', 'barStyle')
+		.attr('height', 0)
+		.transition()
+			.duration(800)
+			.delay(function(d, i){
+				return i * 1000;
+			})
+			.attr("height", function (d) {
+				return d.percent * scale;
+			})
+			.attr(0, "y");
+		
+        svg.selectAll('rect')
 		
         .on("mouseover", function(d){
             div.transition()
