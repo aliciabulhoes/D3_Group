@@ -1,5 +1,4 @@
 //JavaScript Document 
-
 (function(){
 "use strict";
 console.log("SEAF Fired");//important as a debugging tool//this is a shell
@@ -11,6 +10,10 @@ var format = d3.format(".0%");
 var barWidth = 30;
 var barOffset = 30;
 var scale = 3; //scales data to height
+var header = 445;
+var div = d3.select("#graph")
+    .append("div")
+      .attr("class", "textName")
 
 d3.json('gilmore.json', function(data){
 
@@ -23,7 +26,7 @@ var y = d3.scaleLinear()
 	.range([height, 0]);
 var xAxis = d3.axisBottom()
 	.scale(x)
-	.tickValues(data.Lorelai.name)
+	//.tickValues(data.Lorelai.name)
 	//.tickFormat(d3.format(".1f"));
 var yAxis = d3.axisLeft()
 	.scale(y)
@@ -66,8 +69,32 @@ svg.selectAll('bar')
 		.attr('height', function(d){
 			return d.percent * scale;
 		})
-		.style('fill', '#000');
+		.attr('class', 'barStyle')
 
+		
+        .on("mouseover", function(d){
+            div.transition()
+            .duration(200)
+            .style("opacity", 1)
+            div.html(d.name) 
+            .style("left", (d3.event.pageX - 20) + "px")
+            .style("top", (d3.event.pageY - 80) + "px");          
+        
+             d3.select(this)
+				.style('opacity', .5)
+				.style('fill', "#666666");
+
+
+        })
+			
+
+        .on("mouseout", function(d){
+          div.transition()
+          .duration(500)
+          .style("opacity", 0)
+        
+       
+        }); 
 		console.log(data.Lorelai);
 
 })

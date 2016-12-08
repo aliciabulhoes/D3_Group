@@ -81,6 +81,8 @@ a:visited{
 
 #content {
 	display:flex;
+	flex-wrap:wrap;
+	margin-bottom: 50px;
 }
 .button {
 	-webkit-appearance: none;
@@ -91,12 +93,12 @@ a:visited{
 	border:none;
 	font-family: 'Roboto', sans-serif;
 	color:white;
-	font-size:10px;
+	font-size:12px;
 	padding: 10px 25px 10px 25px;
 	letter-spacing: 1px;
-	-ms-flex-preferred-size:30%;
-	    flex-basis:30%;
-	margin: 5px 5px 5px 5px;
+	-ms-flex-preferred-size:50%;
+	    flex-basis:100%;
+	margin: 5px 10px 5px 10px;
 	padding: 10px;
 }
 
@@ -113,6 +115,13 @@ a:visited{
 	flex:1;
 }
 
+#D3 {
+	text-align: center;
+}
+
+#music {
+	margin-bottom: 50px;
+}
 /*---------------------------------FOOTER-CONTENT-------------------------------------*/
 
 footer {
@@ -168,3 +177,25 @@ footer {
   margin-top: 40px;
 }
 
+/*---------------------------------D3-STYLE-------------------------------------*/
+
+.textName { 
+  position: absolute;                     
+  width: 60px;                  
+  height: 30px; 
+  border-radius: 35%;    
+  padding: 10px;                               
+  border: 0px;  
+  font-size: 25px;
+  font-family:'Roboto', sans-serif;
+  color: black;
+  text-align: center; 
+  vertical-align: middle; 
+  opacity: 0; 
+
+}
+
+.barStyle {
+	fill: cadetblue;
+
+}
