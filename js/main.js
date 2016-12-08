@@ -4,7 +4,7 @@
 console.log("SEAF Fired");//important as a debugging tool//this is a shell
 
 var margin = {top: 20, right: 20, bottom: 50, left: 40};
-var width = 600;
+var width = 240;
 var height = 300;
 var format = d3.format(".0%");
 var barWidth = 30;
@@ -17,15 +17,15 @@ var div = d3.select("#graph")
 
 d3.json('gilmore.json', function(data){
 
-var x = d3.scaleOrdinal()
+var x = d3.scaleBand()
 	.domain(data.Lorelai.map(function(d){
 	return d.name;
 	}))
 	.range([0, width]);
 var y = d3.scaleLinear()
 	.range([height, 0]);
-var xAxis = d3.axisBottom()
-	.scale(x)
+var xAxis = d3.axisBottom(x)
+				
 	//.tickValues(data.Lorelai.name)
 	//.tickFormat(d3.format(".1f"));
 var yAxis = d3.axisLeft()
@@ -45,8 +45,8 @@ svg.append('g')
 	.attr('transform', 'translate(0,' + height + ')')
 	.call(xAxis)
 	.selectAll('text')
-		.style('text-anchor', 'end')
-		.attr('dx', '5em')
+		.style('text-anchor', 'middle')
+		.attr('dx', '2')
 		.attr('dy', '0.5em');
 
 svg.append('g')
@@ -76,7 +76,7 @@ svg.selectAll('bar')
             div.transition()
             .duration(200)
             .style("opacity", 1)
-            div.html(d.name) 
+            div.html(d.percent+"%") 
             .style("left", (d3.event.pageX - 20) + "px")
             .style("top", (d3.event.pageY - 80) + "px");          
         
