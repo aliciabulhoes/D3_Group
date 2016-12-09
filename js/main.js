@@ -12,10 +12,12 @@ var barOffset = 30;
 var scale = 3; //scales data to height
 var header = 445;
 
+
 var button1 = document.querySelector("#lorelaiButton");
 var button2 = document.querySelector('#roryButton');
 var button3 = document.querySelector('#laneButton');
 var button4 = document.querySelector('#parisButton');
+
 
 function lorelaiLove(){
 	document.querySelector('#graph').innerHTML='';
@@ -381,6 +383,7 @@ function parisLove(e){
 					.style('fill', "#5F9EA0");
         }); 
 	})
+
 };
 
 button1.addEventListener("click", lorelaiLove, false);

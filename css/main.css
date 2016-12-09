@@ -238,6 +238,30 @@ footer {
 	stroke:#666;
 }
 
+@media screen and (min-width: 31.25em){
+
+
+#content button {
+	-ms-flex-preferred-size:33%;
+	    flex-basis:%;
+	    margin-left: 13px;
+
+}
+
+#content {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+}
+
 @media screen and (min-width: 48em){
 
 #logoFoot {
@@ -257,7 +281,7 @@ footer {
 
 #content button {
 	-ms-flex-preferred-size:33%;
-	    flex-basis:47%;
+	    flex-basis:46%;
 	    margin-left: 13px;
 
 }
