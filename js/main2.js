@@ -14,6 +14,8 @@ var musicBut = document.getElementById("musicControls");
 var graph = ("#graph");
 var musicPlaying = true;
 
+var spring = document.getElementById("springBut");
+var hero = document.querySelector(".hero");
 
  function playMusic(){
  	music.play();
@@ -26,6 +28,10 @@ function togglePlay(){
 	} else {
 		music.play()
 	}
+};
+
+function changeBackground(){
+	hero.classList.toggle('backSpring');
 };
 
 music.onplaying = function(){
@@ -43,5 +49,7 @@ tl.add(TweenMax.staggerFrom(cast, 1, { scale:0.5, opacity:0, delay:0.2, ease:Cir
 
 window.addEventListener("load", playMusic, false);
 musicBut.addEventListener("click", togglePlay, false);
+
+spring.addEventListener('click', changeBackground, false);
 
 })();
