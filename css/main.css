@@ -32,7 +32,6 @@ body {
 
 /*----------------------------------HERO------------------------------------------*/
 .hero {
-	/*background: url(../images/header.png)left no-repeat;*/
 	height:445px; 
 	width:100%;
 	text-align: center;
@@ -67,6 +66,7 @@ body {
 	padding: 10px 25px 10px 25px;
 	letter-spacing: 1px;
 	cursor: pointer;
+	margin-top: 20px;
 }
 
 #calltoact:hover{
@@ -84,6 +84,9 @@ body {
 	color:white;
 }
 
+#tagLine{
+	margin-bottom: 20px;
+}
 
 
 /*---------------------------------LINKS-------------------------------------*/
@@ -119,7 +122,6 @@ a:visited{
 	font-family: 'Roboto', sans-serif;
 	color:white;
 	font-size:13px;
-	padding: 10px 25px 10px 25px;
 	letter-spacing: 1px;
 	-ms-flex-preferred-size:100%;
 	    -webkit-flex-basis:100%;
@@ -146,7 +148,7 @@ a:visited{
 }
 
 #musicControls {
-	background: url(../images/playPause3.png) center no-repeat;
+	background: url(../images/play.svg) center no-repeat;
 	border:none;
 	width:80px;
 	height: 100px;
@@ -156,11 +158,12 @@ a:visited{
 	-webkit-flex:1;
 	    -ms-flex:1;
 	        flex:1;	
+	cursor: pointer;
 	
 }
 
 #springBut {
-	background: url(../images/spring3.png) center no-repeat;
+	background: url(../images/season.svg) center no-repeat;
 	border:none;
 	width:80px;
 	height: 100px;
@@ -170,8 +173,24 @@ a:visited{
 	-webkit-flex:1;
 	    -ms-flex:1;
 	        flex:1;
+	cursor: pointer;
 	
 	
+}
+
+
+#toBut {
+	background: url(../images/up.svg) center no-repeat;
+	border:none;
+	width:80px;
+	height: 100px;
+	outline:0;
+	-webkit-box-flex:1;
+	-webkit-flex:1;
+	    -ms-flex:1;
+	        flex:1;
+	cursor: pointer;
+	margin-bottom: 80px;
 }
 
 #D3 {
@@ -283,13 +302,7 @@ footer {
 @media screen and (min-width: 31.25em){
 
 
-#content button {
-	-ms-flex-preferred-size:33%;
-	    -webkit-flex-basis:%;
-	        flex-basis:%;
-	    margin-left: 13px;
 
-}
 
 #content {
 	display:-webkit-box;
@@ -301,8 +314,7 @@ footer {
 	        flex-wrap: wrap;
 	margin-bottom: 100px;
 	margin-top: 50px;
-	margin-left: 40px;
-	margin-right: 40px;
+
 }
 
 }
@@ -337,18 +349,28 @@ footer {
 #logo{
 	width:60%;
 	margin: 0 auto;
-	/*padding: 96px 45px 40px 45px;*/
 	padding-top: 40px;
 	padding-bottom: 50px;
 }
 
 #content button {
-	-ms-flex-preferred-size:33%;
+	-ms-flex-preferred-size:46%;
 	    -webkit-flex-basis:46%;
 	        flex-basis:46%;
-	    margin-left: 13px;
+	   
 
 }
+
+#lorelaiButton{
+	margin-left: 25px;
+	
+}
+
+#laneButton {
+	margin-left: 25px;
+	
+}
+
 
 #content {
 	display:-webkit-box;
@@ -360,8 +382,7 @@ footer {
 	        flex-wrap: wrap;
 	margin-bottom: 100px;
 	margin-top: 50px;
-	margin-left: 40px;
-	margin-right: 40px;
+	
 }
 
 }
@@ -394,7 +415,7 @@ footer {
 }
 
 #content button {
-	-ms-flex-preferred-size:33%;
+	-ms-flex-preferred-size:20%;
 	    -webkit-flex-basis:20%;
 	        flex-basis:20%;
 	    margin-left: 40px;

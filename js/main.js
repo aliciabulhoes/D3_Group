@@ -90,9 +90,9 @@ function lorelaiLove(){
 	            div.transition()
 	            .duration(200)
 	            .style("opacity", 1)
-	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+"/>") 
-	            .style("left", (d3.event.pageX - 170) + "px")
-	            .style("top", height + 450 - d.percent +"px")        
+	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+">") 
+	            .style("left", (d3.event.pageX - 150) + "px")
+	            .style("top", height + 500 - d.percent +"px")        
 	        
 	             d3.select(this)
 					.style('fill', "#FB5A5A");
@@ -182,7 +182,7 @@ function roryLove(e){
 	            div.transition()
 	            .duration(200)
 	            .style("opacity", 1)
-	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+"/>") 
+	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+">") 
 	            .style("left", (d3.event.pageX - 150) + "px")
 	            .style("top", height + 500 - d.percent +"px")        
 	        
@@ -274,7 +274,7 @@ function laneLove(e){
 	            div.transition()
 	            .duration(200)
 	            .style("opacity", 1)
-	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+"/>") 
+	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+">") 
 	            .style("left", (d3.event.pageX - 150) + "px")
 	            .style("top", height + 480 - d.percent +"px")        
 	        
@@ -367,7 +367,7 @@ function parisLove(e){
 	            div.transition()
 	            .duration(200)
 	            .style("opacity", 1)
-	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+"/>") 
+	            div.html(d.percent+"%"+"<br/><img height='100'src=images/"+d.image+">") 
 	            .style("left", (d3.event.pageX - 150) + "px")
 	            .style("top", height + 500 - d.percent +"px")        
 	        

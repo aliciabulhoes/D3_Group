@@ -8,9 +8,12 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <script src="js/d3.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+<script src="js/TweenMax.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
 <script src="js/d3.min.js"></script>
 </head>
 <body>
+<h1 class="hidden">Gilmore Character Love Stats</h1>
 <section class="hero">
 	<h2 class="hidden">Hero</h2>
 	<section id="music">
@@ -40,6 +43,7 @@
 <section id="D3">
 	<h2 class="hidden">Character Data based on Buzzfeed Quiz</h2>
 	<div id="graph"><!-- D3 goes here --></div>
+	<button id="toBut"></button>
 </section>
 
 <footer>
@@ -53,7 +57,7 @@
 	</ul>
 	<p id="copyR">Data taken from Buzzfeed&copy;<br/>By Melissa Lajoie &amp; Alicia Bulhoes</p>
 </footer>
- <script src="js/TweenMax.min.js"></script>
+
 <script src="js/main2.js"></script>
 <script src="js/main.js"></script>
 </body>
